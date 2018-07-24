@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 public class CodeController {
     @Autowired
-    CodeService codeService;
+    private CodeService codeService;
 
 
     @GetMapping("/codeStr")
