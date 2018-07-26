@@ -32,14 +32,14 @@ public class MyBatisConfiguration {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         Resource[] mapperXml;
         try {
-            mapperXml = resolver.getResources("classpath*:mybatis/mapper/*.xml");
+            mapperXml = resolver.getResources("classpath*:mybatis/mapper/*/*.xml");
             sqlSessionFactoryBean.setMapperLocations(mapperXml);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         // 设置别名包
-        sqlSessionFactoryBean.setTypeAliasesPackage("cn.eddy.domain");
+        //sqlSessionFactoryBean.setTypeAliasesPackage("cn.eddy.domain");
 
         return sqlSessionFactoryBean;
     }

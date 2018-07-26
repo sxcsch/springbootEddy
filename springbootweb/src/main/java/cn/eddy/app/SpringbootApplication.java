@@ -2,12 +2,14 @@ package cn.eddy.app;
 
 import cn.eddy.filter.TimeFilter;
 import cn.eddy.listener.Listener;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.ServletContext;
@@ -20,6 +22,8 @@ import java.util.EnumSet;
 @SpringBootApplication
 @EnableCaching
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@EnableTransactionManagement
+//@MapperScan("cn.eddy.dao")
 @ComponentScan(basePackages = {"cn.eddy"})
 public class SpringbootApplication extends SpringBootServletInitializer {
 
