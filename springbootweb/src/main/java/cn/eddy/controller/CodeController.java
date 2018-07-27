@@ -27,11 +27,11 @@ public class CodeController {
     public Object str(HttpServletRequest request, HttpServletResponse response){
         try {
             String str = codeService.getRandomStr((int)(Math.random()*101+1));
-            String callback = request.getParameter("back");
+            String callback = request.getParameter("callback");
             PageData pageData = new PageData();
             response.setHeader("Access-Control-Allow-Origin", "*");
             response.setHeader("Access-Control-Allow-Methods","GET,POST");
-            pageData.put("back", callback + "(" + str + ")");
+            pageData.put("callback", callback + "(" + str + ")");
             return AppUtil.returnObject(new PageData(), pageData);
         } catch (Exception e) {
             e.printStackTrace();
@@ -53,7 +53,7 @@ public class CodeController {
             response.setContentType("text/html;charset=utf-8");
             String result = sb.toString();
             //前端传过来的回调函数名称
-            String callback = request.getParameter("back");
+            String callback = request.getParameter("callback");
             //用回调函数名称包裹返回数据，这样，返回数据就作为回调函数的参数传回去了
             result = callback + "(" + result + ")";
             response.getWriter().write(result);
