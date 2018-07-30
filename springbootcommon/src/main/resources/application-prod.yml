@@ -1,0 +1,82 @@
+#tomcat端口
+server:
+    port: 8013
+    context-path: /eddy
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        druid:
+            driver-class-name: com.mysql.jdbc.Driver
+            url: jdbc:mysql://47.93.34.35:3306/xiaochengxu?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+            username: root
+            password: sxc594678448
+            initial-size: 5
+            min-idle: 5
+            max-active: 20
+            max-wait: 60000
+            time-between-eviction-runs-millis: 60000
+            min-evictable-idle-time-millis: 300000
+            validation-query: SELECT 1 FROM DUAL
+            test-while-idle: true
+            test-on-borrow: false
+            test-on-return: false
+            pool-prepared-statements: true
+            max-pool-prepared-statement-per-connection-size: 20
+            filters: stat,wall,log4j
+            ## druid 监控页面
+            stat-view-servlet:
+                enabled: true
+                url-pattern: /druid/*
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+    # 缓存类型（ehcache、redis）
+    cache:
+        ehcache:
+            config: classpath:ehcache.xml
+    # redis 配置
+    redis:
+        host: 47.93.34.35
+        port: 6379
+        password: 594678
+        database: 0
+        timeout: 0
+        pool:
+            max-active: 8
+            max-wait: -1
+            max-idle: 8
+            min-idle: 0
+    view:
+        prefix: /WEB-INF/jsp/
+        suffix: .jsp
+    #freemarker 配置
+    freemarker:
+        allow-request-override: false
+        cache: true
+        check-template-location: true
+        charset: UTF-8
+        content-type: text/html
+        expose-request-attributes: false
+        expose-session-attributes: false
+        expose-spring-macro-helpers: false
+        prefix:
+        spring.freemarker.suffix: .ftl
+    #thymeleaf 配置
+    thymeleaf:
+        cache: true
+        suffix: .html
+        mode: HTML5
+        encoding: UTF-8
+        content-type: text/html
+        prefix:
+            classpath: /WEB-INF/templates/
+#redis配置
+mybatis:
+    config-location:
+        classpath: mybatis/mybatis-config.xml
+    mapper-locations:
+        classpath*: mybatis/*/*.xml
+# 打印日志，查看 sql
+logging:
+    level.com.light.springboot: DEBUG
