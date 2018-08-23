@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eddymain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootcommon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootdao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootdomain" charset="UTF-8" />
