@@ -1,10 +1,7 @@
 import cn.eddy.utils.fileUtils.FileUtil;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -20,11 +17,29 @@ public class AppMain {
             System.out.println(new String(bytes,"gbk"));*/
 
             List list = new ArrayList<String>();
-            AppMain t = new AppMain();
-            List<Future<String>> futureList = new ArrayList<Future<String>>();
-            t.generate(3, futureList);
-            t.doOtherThings();
-            t.getResult(futureList);
+            for (int i=0;i<9999;i++){
+                Random random = new Random();
+                int raint = random.nextInt();
+                list.add(raint+"");
+            }
+            int excelThreadNum = 20;
+            int asd = 0;
+            for(int s=1;s<=excelThreadNum;s++){
+                int count;
+                int start;
+                int size = list.size();
+                if (s == excelThreadNum) {
+                    start = (s - 1) * (size / excelThreadNum);
+                    count = s * (size / excelThreadNum )+ (size % excelThreadNum);
+                } else {
+                    start = (s - 1) * (size / excelThreadNum);
+                    count = s * (size / excelThreadNum);
+                }
+                List<LinkedHashMap<String,String>> sub = list.subList(start,count);
+                System.err.println(sub.size());
+                asd+=sub.size();
+            }
+            System.err.println(asd);
         } catch (Exception e) {
             e.printStackTrace();
         }

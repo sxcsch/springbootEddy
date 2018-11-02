@@ -79,7 +79,6 @@
           <element id="library" level="project" name="Maven: io.springfox:springfox-schema:2.7.0" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-swagger-common:2.7.0" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-spring-web:2.7.0" />
-          <element id="library" level="project" name="Maven: org.reflections:reflections:0.9.11" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" />
@@ -94,7 +93,6 @@
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.0.12.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
-          <element id="library" level="project" name="Maven: org.javassist:javassist:3.21.0-GA" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: org.jboss:jandex:2.0.0.Final" />
           <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
@@ -131,6 +129,26 @@
           <element id="archive" name="springbootdomain-1.0-SNAPSHOT.jar">
             <element id="module-output" name="springbootdomain" />
           </element>
+          <element id="library" level="project" name="Maven: com.paypal.springboot:resteasy-spring-boot-starter:2.3.0-RELEASE" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs:3.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.1.Beta1" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs-services:3.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" />
+          <element id="library" level="project" name="Maven: net.jcip:jcip-annotations:1.0" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-servlet-initializer:3.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-spring:3.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-client:3.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jackson2-provider:3.1.0.Final" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.9" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.8.9" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.9" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.reflections:reflections:0.9.10" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.21.0-GA" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:annotations:2.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
