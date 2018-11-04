@@ -12,9 +12,9 @@
     <packaging>war</packaging>
     <artifactId>springbootweb</artifactId>
 
-    <!--<properties>
+    <properties>
         <resteasy.version>3.1.4.Final</resteasy.version>
-    </properties>-->
+    </properties>
 
     <dependencies>
         <!-- 包含 mvc,aop 等jar资源 -->
@@ -52,7 +52,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!--<dependency>
+        <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxrs</artifactId>
             <version>${resteasy.version}</version>
@@ -80,7 +80,7 @@
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jackson2-provider</artifactId>
             <version>${resteasy.version}</version>
-        </dependency>-->
+        </dependency>
 
         <dependency>
             <groupId>com.paypal.springboot</groupId>

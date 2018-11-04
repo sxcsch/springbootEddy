@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="springbootweb:war">
-    <output-path>$PROJECT_DIR$/springbootweb/target</output-path>
-    <root id="archive" name="eddy.war">
-      <element id="artifact" artifact-name="springbootweb:war exploded" />
-    </root>
-  </artifact>
-</component>

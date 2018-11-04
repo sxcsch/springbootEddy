@@ -14,14 +14,5 @@
         <module name="springbootweb" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eddymain" target="1.8" />
-      <module name="springbootcommon" target="1.8" />
-      <module name="springbootdao" target="1.8" />
-      <module name="springbootdomain" target="1.8" />
-      <module name="springbootEddy" target="1.8" />
-      <module name="springbootservice" target="1.8" />
-      <module name="springbootweb" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
